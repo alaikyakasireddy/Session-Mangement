@@ -2,21 +2,15 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Session Management</title>
+    <title>Restricted Page</title>
 </head>
 <body>
     
-    <div>{{.}}</div>
     <div>
-        <form method="POST" action="/enter">
-            Please enter your name and the secret password<br />
-            Name: <input type="text" name="Name"></input><br />
-            Secret Site-Wide Password: <input type="password" name="Password"></input><br />
-            <input type="submit" value="Submit" /><br />
-        </form>
-    </div>
-    <div style="padding-top:10px;">
+        Only people who are logged in can see this page
+        <br/>
         <a href="/alternative">Other Page</a>
+        <a href="/exit">Logout</a>
     </div>
     
 </body>
